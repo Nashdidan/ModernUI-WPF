@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="ModernUI.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModernUI.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="800">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBlock Text="Discover"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="400"
+                    Height="200">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                            <GradientStop Color="Purple" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10"
+                                       Rect="0,0,400, 200"/>
+                    </Border.Clip>
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="My God&#x0a;this is amazing" Foreground="White" FontSize="28"
+                                   Margin="20,0,0,0"/>
+                            <TextBlock Text="shitting my pants" Foreground="White" FontSize="18"
+                                   Margin="20,10,10,0"/>
+                        </StackPanel>
+                        <Image Width="182" Source="/Images/Screenshot 2023-04-13 154840.png"
+                           HorizontalAlignment="Right" Margin="0,100,-14,0"/>
+                    </Grid>
+                </Border>
+                <Border Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#FFc554" Offset="0.0"/>
+                            <GradientStop Color="Purple" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                </Border>
+
+
+            </StackPanel>
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="150, 0,0,0"/>
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="Yo Yo&#x0a;Bitchesss" Foreground="White" FontSize="28" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="150" Height="150" Margin="0,0,0,10">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                                <GradientStop Color="Azure" Offset="0.0"/>
+                                <GradientStop Color="Bisque" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    <Border Width="150" Height="150" Margin="0,0,0,10">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                                <GradientStop Color="Tan" Offset="0.0"/>
+                                <GradientStop Color="Bisque" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    <Border Width="150" Height="150" Margin="0,0,0,10">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                                <GradientStop Color="Salmon" Offset="0.0"/>
+                                <GradientStop Color="Bisque" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                    <Border Width="150" Height="150" Margin="0,0,0,10">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                                <GradientStop Color="DarkKhaki" Offset="0.0"/>
+                                <GradientStop Color="Bisque" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+
+    </ScrollViewer>
+</UserControl>
