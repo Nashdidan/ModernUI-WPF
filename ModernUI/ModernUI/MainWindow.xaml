@@ -25,7 +25,7 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Elysian"
+            <TextBlock Text="Idan Modern App!"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Foreground="White"
